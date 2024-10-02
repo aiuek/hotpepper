@@ -1,0 +1,25 @@
+{
+    "name": "hotpepper", 
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "get good hotpepper",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://beauty.hotpepper.jp/*/*"
+        ],
+        "js": [
+          "./content.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "tabs"
+    ]
+  }
+  
