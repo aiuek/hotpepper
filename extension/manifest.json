@@ -20,6 +20,12 @@
     },
     "permissions": [
       "tabs"
+      
+    ],
+    "host_permissions":[
+      "https://*/*",
+      "http://*/*"
     ]
   }
+  
   
